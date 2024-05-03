@@ -1,11 +1,3 @@
-### Project: Virtual Trouble shooting:
-
-
-* HTML
-* CSS
-* JS
-
+### Project: Virtual Trouble shooting
 
 High Fedility  prototype: https://github.com/Shatarupa21/CS435_Human-Computer-Interaction
-
-Virtual Troubleshoot: https://rabsh98.github.io/

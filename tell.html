@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video On Button Click</title>
+</head>
+<body>
+    <h1>Play Video on Button Click</h1>
+    <video id="myVideo" width="320" height="240" controls>
+        <source src="videos/myvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <button id="playButton">Play Video</button>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            var video = document.getElementById('myVideo');
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause(); // Optional: toggle play/pause
+            }
+        });
+    </script>
+</body>
+</html>

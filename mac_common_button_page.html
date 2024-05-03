@@ -64,6 +64,9 @@
 <head>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting Guide</title>
     <script>
         function showPDF(pdfUrl) {
             var container = document.getElementById('pdfViewer');
@@ -75,9 +78,8 @@
             container.innerHTML = '<iframe src="' + pdfUrl + '" width="100%" height="100%" style="border: none;"></iframe>';
         }
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Troubleshooting Guide</title>
+
+    
     <style>
         .feedback-button {
             position: fixed; /* Fixed position to stay in place while scrolling */
@@ -109,6 +111,15 @@
     </style>
 </head>
 
+<title>Troubleshooting Guide</title>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/ekawxfrp.json"
+    trigger="hover"
+    style="width:250px;height:250px">
+</lord-icon>
+
+
 <body>
     <div class="container-fluid">
         <nav class="navbar">
@@ -127,15 +138,17 @@
                 <button class="btn btn-primary btn-block explore-button" onclick="showPDF('pdf/HCIMac_oc.pdf')">Textual Guide with Screenshots</button>
               </a>
 
+              <a href="https://drive.google.com/file/d/1BmzhRYdDj7XlcC6mRHmaQMRQ6FzVbTvO/view?usp=sharing" >
+                <button class="btn btn-primary btn-block explore-button" onclick="showPDF('HCIMac_oc.pdf')">Interactive Icon Guide</button>
+              </a>
+
               <a href="pdf/Wireless_flow.pdf" >
                 <button class="btn btn-primary btn-block explore-button" onclick="showPDF('pdf/Wireless_flow.pdf')">Flowchart</button>
               </a>
 
-              <a href="HCIMac_oc.pdf" >
-                <button class="btn btn-primary btn-block explore-button" onclick="showPDF('HCIMac_oc.pdf')">Interactive Icon Guide</button>
-              </a>
+              
 
-              <a href="https://www.youtube.com/watch?v=tKrkoxrY2wc" >
+              <a href="https://drive.google.com/file/d/1BmzhRYdDj7XlcC6mRHmaQMRQ6FzVbTvO/view?usp=sharing" >
                 <button class="btn btn-primary btn-block explore-button" onclick="showPDF('HCIMac_oc.pdf')">Animated Video Guide</button>
               </a>
 
@@ -158,7 +171,7 @@
     </div>
 
     <!-- JavaScript for PDF Viewer - Make sure to have one common script -->
-    <script>
+    <!-- <script>
         function showPDF(pdfUrl, event) {
             event.preventDefault(); // Prevent the default anchor click behavior
             var container = document.getElementById('pdfViewer'); // Make sure to target the correct container
@@ -171,6 +184,6 @@
         }
         
         
-    </script>
+    </script> -->
 </body>
 </html>
