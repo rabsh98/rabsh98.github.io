@@ -1,0 +1,340 @@
+/* ... (other responsive adjustments) ... */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #4B3F6B;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 100vh;
+
+  .explore-button {
+    background-color: #342A4A;
+    color: white;
+    border: none;
+
+    padding: 12px 5px;
+    cursor: pointer;
+    margin-top: 10;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: Verdana;
+    font-weight: bold;
+    outline: none;
+  }
+
+  /* Assuming you have a <style> tag or a CSS file */
+  .pdf-container {
+    display: flex;
+    /* Enables flexbox layout */
+    justify-content: center;
+    /* Centers horizontally in the flex container */
+    align-items: center;
+    /* Centers vertically in the flex container */
+    height: 75vh;
+    /* Example height, 75% of the viewport height */
+  }
+
+  #pdfViewer {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Optional: Adds a shadow for better visibility */
+    overflow: hidden;
+    /* Ensures the content does not overflow */
+  }
+
+
+  }
+
+  .button-container {
+    background-color: #d3d3d3;
+    /* Light grey background for the container */
+    padding: 20px;
+    /* You can adjust the padding as needed */
+    margin: 20px 0;
+    /* Space above and below the container */
+  }
+
+  .explore-button {
+    /* Add styles for your buttons here */
+    margin-bottom: 8px;
+    /* Space between buttons */
+    /* Other button styles */
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    /* Adjust as needed */
+  }
+
+  .navbar {
+    background-color: #342A4A;
+    color: white;
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+
+  .navbar .logo img {
+    width: 60px;
+    /* Increase width as needed */
+    height: 60px;
+    /* Keep height the same as width for a perfect circle */
+    border-radius: 50%;
+    /* This makes the image circular */
+    object-fit: cover;
+    /* Ensures the image covers the area without distorting aspect ratio */
+  }
+
+  .navbar div,
+  .navbar div a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar div a:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .main-content {
+    text-align: center;
+    margin-top: 60px;
+    /* Adjusted for the fixed navbar */
+  }
+
+  .main-content h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #FFF;
+  }
+
+
+  .explore-button {
+    background-color: #342A4A;
+    /* Button background color */
+    color: white;
+    border: none;
+    padding: 15px 5px;
+    /* Button padding */
+    cursor: pointer;
+    margin-top: 10px;
+    /* Margin between buttons */
+    border-radius: 20px;
+    font-size: 1rem;
+    /* Font size of the text inside the button */
+    font-weight: normal;
+    outline: none;
+    width: 258px;
+    /* Fixed width of the button */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    transition: background-color 0.3s;
+    /* Smooth background color transition for hover effect */
+    font-family: Cambria;
+
+  }
+
+
+
+  .explore-button:hover {
+    background-color: #8168AE;
+    /* Button hover background color */
+  }
+
+  .device-icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    color: white;
+    /* Allows wrapping on small screens */
+  }
+
+  .device-icon {
+    background-color: #342A4A;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 120px;
+    /* Minimum width for each icon container */
+  }
+
+  .device-icon img {
+    width: 50px;
+    /* Set your desired size */
+    height: auto;
+  }
+
+  .menu li a:hover {
+    background-color: #7e7cbb;
+  }
+
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .navbar .logo img {
+    width: 60px;
+    /* Increase width as needed */
+    height: 60px;
+    /* Keep height the same as width for a perfect circle */
+    border-radius: 50%;
+    /* This makes the image circular */
+    object-fit: cover;
+    /* Ensures the image covers the area without distorting aspect ratio */
+  }
+
+  .device-icon i {
+    font-size: 50px;
+    /* Adjust as needed */
+    color: white;
+    /* Or any other color you prefer */
+  }
+
+  .device-icon p {
+    margin: 10px 0 0;
+  }
+
+  @media (max-width: 600px) {
+    .device-icon {
+      flex: 1 1 100%;
+      /* Allow each icon to take up the full width */
+    }
+  }
+
+  .sidebar {
+    min-height: 100vh;
+    /* Full height */
+    background-color: #2c205e;
+    /* Your color */
+    color: white;
+    background-color: #342A4A;
+    margin-top: 294px;
+    padding: 105px 18px;
+    width: 298px;
+    height: 100%;
+  }
+
+  .sidebar1 {
+    min-height: 100vh;
+    /* Full height */
+    background-color: #2c205e;
+    /* Your color */
+    color: white;
+    background-color: #342A4A;
+    margin-top: 294px;
+    padding: 105px 18px;
+    width: 298px;
+    height: 100%;
+  }
+
+
+
+  .sidebar .header {
+    padding: 20px;
+    /* Padding for header */
+    background-color: #372A85;
+    /* Darker background for header */
+    text-align: center;
+  }
+
+  .explore-button {
+    width: 100%;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #8168ae;
+    color: white;
+    font-family: verdana;
+  }
+
+  .explore-button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    /* Bootstrap typically uses rems for margins and padding */
+    border: none;
+    background-color: #8168ae;
+    color: white;
+    font-family: 'Verdana', sans-serif;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* Smooth transition for hover effect */
+  }
+
+  /* Bootstrap doesn't use :hover on btn-primary by default for background change, so you add it if you need */
+  .explore-button:hover,
+  .explore-button:focus {
+    background-color: #6f57a6;
+    /* A slightly darker shade for hover state */
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    /* Slight lift effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    /* Add a shadow to lift effect */
+  }
+
+  /* Ensuring the active and focus states are visually manageable */
+  .explore-button:not(:disabled):not(.disabled).active,
+  .explore-button:not(:disabled):not(.disabled):active,
+  .show>.explore-button.dropdown-toggle {
+    background-color: #5e468c;
+    /* Even darker for the active state */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    /* Smaller shadow for pressed effect */
+  }
+
+  .custom-content {
+    position: fixed;
+    top: 35%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 871px;
+    z-index: 10;
+  }
+  .explore-button {
+    background-color: #8168AE;
+    color: white;
+    border: none;
+    padding: 10px 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+  }
+
+  
+
+
+
+
+
+  @media (max-width: 1000px) {
+    .sidebar {
+      min-height: auto;
+      /* Auto height on small screens */
+      padding-bottom: 10px;
+    }
+  }
+
+}
+
+
+
+
+
+
+/* Styles for when the screen width is 600px or less */

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Classroom Support</title>
+    <script>
+        function sendNotification() {
+    alert("Notification Sent Successfully!");
+}
+    </script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4B3F6B;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .navbar {
+            background-color: #342A4A;
+            color: white;
+            width: 100%;
+            padding: 0px 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+        }
+        .navbar .logo img {
+            width: 60px; /* Increase width as needed */
+            height: 60px; /* Keep height the same as width for a perfect circle */
+            border-radius: 50%; /* This makes the image circular */
+            object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
+        }
+        .navbar div, .navbar div a {
+            color: white;
+            text-decoration: none;
+        }
+        .navbar div a:not(:last-child) {
+            margin-right: 20px;
+        }
+        .content {
+            text-align: center;
+            margin-top: 60px;
+            width: 40%;
+        }
+        .content h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: #FFF;
+        }
+        .send-button {
+            background-color: #8168AE;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 20px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            outline: none;
+        }
+        .contact-box {
+            background-color: #342A4A;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-box i {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .contact-box p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="IITGN_Logo.png" alt="Your Logo">
+        </div>
+        <div>
+            <a href="virtualtrouble.html">Home page</a>
+            <a href="classrommsupport.html">Contact Classroom Support</a>
+            <a href="#">Help?</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Contact Classroom Support</h1>
+        <div class="contact-box">
+            <i class="fas fa-envelope"></i>
+            <p>support@example.com</p>
+        </div>
+        <div class="contact-box">
+            <i class="fas fa-phone-alt"></i>
+            <p>123-456-7890</p>
+        </div>
+        <button class="send-button" onclick="sendNotification()">Send Notification</button>
+    </div>
+</body>
+</html>

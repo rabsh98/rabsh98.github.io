@@ -1,0 +1,95 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive PDF Display with Button</title>
+    <style>
+        #pdfContainer {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            display: none; /* Initially hidden */
+        }
+
+        iframe {
+          width: 80%; /* Set iframe width to 80% of its parent container */
+          height: 80%; /* Set iframe height to 80% of its parent container */
+          border: none;
+          box-shadow: 0 0 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
+      }
+    </style>
+</head>
+<body>
+    <h1>Click the Button to Load the PDF</h1>
+    <button id="loadPdfButton">Load PDF</button>
+    <div id="pdfContainer">
+       
+    </div>
+
+    <script>
+        document.getElementById('loadPdfButton').addEventListener('click', function() {
+            var container = document.getElementById('pdfContainer');
+            var iframe = document.createElement('iframe');
+            iframe.src = "HCIMac_oc.pdf"; // Set the path to your PDF
+            iframe.onload = function() {
+                console.log("PDF loaded successfully.");
+            };
+            container.appendChild(iframe);
+            container.style.display = 'block'; // Make the PDF container visible
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open PDF on Button Click</title>
+</head>
+<body>
+    <h1>Open PDF in a New Tab</h1>
+    <form action="HCIMac_oc.pdf" method="get" target="_blank">
+        <button type="submit">Open PDF</button>
+    </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open PDF on Button-Like Click</title>
+    <style>
+        /* Button styling */
+        .button-style {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button-style:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click to Open PDF in New Tab</h1>
+    <!-- Link styled as a button -->
+    <a href="path/to/your/document.pdf" target="_blank" class="button-style">Open PDF</a>
+</body>
+</html>
+
+
