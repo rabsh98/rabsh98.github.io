@@ -81,14 +81,21 @@
       outline: none;
     }
 
+    .device-icons {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      flex-wrap: wrap;
+      /* Allows wrapping on small screens */
+    }
+
     .device-icon {
       background-color: #342A4A;
       border-radius: 10px;
-      padding: 55px;
+      padding: 20px;
       margin: 10px;
       flex: 1;
       min-width: 120px;
-      padding: 44px;
       /* Minimum width for each icon container */
     }
 
@@ -112,14 +119,12 @@
     .device-icon i {
       font-size: 50px;
       /* Adjust as needed */
-
       color: white;
       /* Or any other color you prefer */
     }
 
     .device-icon p {
       margin: 10px 0 0;
-      color: white;
     }
 
     @media (max-width: 600px) {
@@ -148,13 +153,14 @@
 
     </div>
 
+    <button class="explore-button">Exlore here</button>
 
 
 
     <div class="device-icons">
       <div class="device-icon">
         <!-- Font Awesome icon for Apple (used for Mac) -->
-        <a href="pdf/ iPhone_iPad.pdf" class="device-link">
+        <a href="common_button_page.html" class="device-link">
           <i class="fab fa-apple" aria-hidden="true"></i>
           <p>Mac</p>
         </a>
@@ -162,13 +168,20 @@
 
       <div class="device-icon">
         <!-- Font Awesome icon for Android -->
-        <a href="pdf/AndroidMobile.pdf" class="device-link">
+        <a href="common_button_page.html" class="device-link">
           <i class="fab fa-android" aria-hidden="true"></i>
           <p>Android</p>
         </a>
       </div>
 
 
+      <div class="device-icon">
+        <!-- Font Awesome icon for Windows -->
+        <a href="common_button_page.html" class="device-link">
+          <i class="fab fa-windows" aria-hidden="true"></i>
+          <p>Windows</p>
+        </a>
+      </div>
 
       <!-- ... add more icons as needed ... -->
     </div>
