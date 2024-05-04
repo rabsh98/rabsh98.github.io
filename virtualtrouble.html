@@ -1,160 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Troubleshooting Guide</title>
-<style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #4B3F6B;
-    color: white;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  .navbar {
-    background-color: #342A4A;
-    color: white;
-    width: 100%;
-    padding: 0px 20px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-}
-.navbar .logo img {
-    width: 60px; /* Increase width as needed */
-    height: 60px; /* Keep height the same as width for a perfect circle */
-    border-radius: 50%; /* This makes the image circular */
-    object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
-}
-  .navbar div, .navbar div a {
-    color: white;
-    text-decoration: none;
-  }
-  .navbar div a:not(:last-child) {
-    margin-right: 20px;
-  }
-  .main-content {
-    text-align: center;
-    margin-top: 60px; /* Adjusted for the fixed navbar */
-  }
-  .main-content h1 {
-    font-size: 2rem;
-    margin: 0;
-    color: #FFF;
-  }
-  .main-content .explore-button {
-    background-color: #8168AE;
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 20px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    outline: none;
-  }
-  .device-icons {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    flex-wrap: wrap; /* Allows wrapping on small screens */
-  }
-  .device-icon {
-    background-color: #342A4A;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 40px;
-    flex: 1;
-    min-width: 120px; /* Minimum width for each icon container */
-  }
-  .device-icon img {
-    width: 50px; /* Set your desired size */
-    height: auto;
-  }
 
-  .navbar .logo img {
-    width: 60px; /* Increase width as needed */
-    height: 60px; /* Keep height the same as width for a perfect circle */
-    border-radius: 50%; /* This makes the image circular */
-    object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troubleshooting Guide</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #4B3F6B;
+      color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+ 
 
-  .device-icon i {
-    font-size: 50px; /* Adjust as needed */
-    color: white; /* Or any other color you prefer */
-}
+    .navbar {
+      background-color: #342A4A;
+      color: white;
+      width: 100%;
+      padding: 0px 20px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 0;
+    }
+
+    .navbar .logo img {
+      width: 60px;
+      /* Increase width as needed */
+      height: 60px;
+      /* Keep height the same as width for a perfect circle */
+      border-radius: 50%;
+      /* This makes the image circular */
+      object-fit: cover;
+      /* Ensures the image covers the area without distorting aspect ratio */
+    }
+
+    .navbar div,
+    .navbar div a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar div a:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .main-content {
+      text-align: center;
+      margin-top: 60px;
+      /* Adjusted for the fixed navbar */
+    }
+
+    .main-content h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #FFF;
+    }
+
+    .main-content .explore-button {
+      background-color: #8168AE;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 20px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      outline: none;
+    }
+
+    .device-icons {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      flex-wrap: wrap;
+      /* Allows wrapping on small screens */
+    }
+
+    .device-icon {
+      background-color: #342A4A;
+      border-radius: 10px;
+      padding: 30px;
+      margin: 40px;
+      flex: 1;
+      min-width: 120px;
+      /* Minimum width for each icon container */
+    }
+
+    .device-icon img {
+      width: 50px;
+      /* Set your desired size */
+      height: auto;
+    }
+
+    .navbar .logo img {
+      width: 60px;
+      /* Increase width as needed */
+      height: 60px;
+      /* Keep height the same as width for a perfect circle */
+      border-radius: 50%;
+      /* This makes the image circular */
+      object-fit: cover;
+      /* Ensures the image covers the area without distorting aspect ratio */
+    }
+
+    .device-icon i {
+      font-size: 50px;
+      /* Adjust as needed */
+      color: white;
+      /* Or any other color you prefer */
+    }
 
     .device-icon p {
-        margin: 10px 0 0;
+      margin: 10px 0 0;
+      color: white;
     }
+
+    body, html {
+      height: 100%;
+      margin: 0;
+  }
+  
+  footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: #302a43; /* Dark background for contrast */
+      color: white;           /* White text color */
+      text-align: center;
+      padding: 10px 0;
+  }
+  
+  footer a {
+      color: rgb(62, 114, 52);          /* Link color white */
+      text-decoration: none; /* No underline */
+      font-size: larger;
+  }
+  
+  footer a:hover {
+      color: #ccc;           /* Light grey on hover */
+  }
+  
     @media (max-width: 600px) {
-        .device-icon {
-        flex: 1 1 100%; /* Allow each icon to take up the full width */
-        }
+      .device-icon {
+        flex: 1 1 100%;
+        /* Allow each icon to take up the full width */
+      }
     }
-</style>
+  </style>
 </head>
+
+
 <body>
   <nav class="navbar">
     <div class="logo">
-        <img src="IITGN_Logo.png" alt="Your Logo">
+      <img src="IITGN_Logo.png" alt="Your Logo">
     </div>
     <div>
-        <a href="virtualtrouble.html">Home page</a>
-        <a href="classrommsupport.html">Contact Classroom Support</a>
-        <a href="#">Help?</a>
+      <a href="virtualtrouble.html">Home page</a>
+      <a href="classrommsupport.html">Contact Classroom Support</a>
+      <a href="#">Help?</a>
     </div>
-</nav>
+  </nav>
 
-  <div class="main-content"><div class="logo">
-    
-</div>
+ 
+
+  <div class="main-content">
+    <div class="logo">
+
+    </div>
     <h1>Welcome To Troubleshooting Guide</h1>
     <!-- <button class="explore-button">Exlore here</button> -->
-    
+
     <div class="device-icons">
       <div class="device-icon">
         <!-- Wrap the icon and text in an anchor tag to make them clickable -->
         <a href="platformSelect.html" class="device-link">
-            <!-- Font Awesome computer icon -->
-            <i class="fas fa-desktop" aria-hidden="true"></i>
-            <p>Computer</p>
+          <!-- Font Awesome computer icon -->
+          <i class="fas fa-desktop" aria-hidden="true"></i>
+          <p>Computer</p>
         </a>
-    </div>
-    
-        <div class="device-icon">
-          <!-- Font Awesome mobile phone icon -->
-          <a href="mobilePlatform.html" class="device-link">
+      </div>
+
+      <div class="device-icon">
+        <!-- Font Awesome mobile phone icon -->
+        <a href="mobilePlatform.html" class="device-link">
           <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-          <p>Phone</p>
-        </div>
-        <div class="device-icon">
+          <p>Phone/Tablet</p>
+        </a>
+      </div>
+      <div class="device-icon">
+        <a href="pdf/All_Mirror.pdf" class="device-link">
           <!-- Font Awesome projector icon (using video as a substitute as Font Awesome might not have a projector) -->
           <i class="fas fa-video" aria-hidden="true"></i>
-          <p>Projector</p>
-        </div>
-        <!-- Add more device icons as needed -->
+          <p>HDMI- Projector</p>
+        </a>
       </div>
-      
-       
-      </div>
-      <!-- Add more device icons as needed -->
     </div>
+    <!-- Add more device icons as needed -->
   </div>
-  
-<!-- JavaScript can be added here if needed -->
+
+
+
+
+  </div>
+  <!-- Add more device icons as needed -->
+  </div>
+  </div>
+
+  <!-- JavaScript can be added here if needed -->
+
+  <footer>
+
+  <a href="https://github.com/rabsh98/rabsh98.github.io">GitHub Link</a></p>
+</footer>
 
 </body>
+
+
+
 </html>
