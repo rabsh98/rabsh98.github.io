@@ -14,7 +14,7 @@ High fidelity Prototype Figma: https://www.figma.com/proto/druovisr6WtfTOgJCWEvK
 
 Video connection link: https://drive.google.com/file/d/1mYWn_kXn5Wy2IJe538ErX_Yqk8TGzL-_/view?usp=sharing
 
-Presentation slide: https://github.com/rabsh98/rabsh98.github.io/blob/main/pdf/Slide_Virtual%20Troubleshooting%20Guide%20for%20Classroom%20support-HCI%20(CS435))%20(1).pdf
+Presentation slide: https://github.com/rabsh98/rabsh98.github.io/blob/main/pdf/Virtual%20Troubleshooting%20Guide%20for%20Classroom%20support-HCI%20(CS435)).pdf
 
 
 
